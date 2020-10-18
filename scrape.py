@@ -1,15 +1,3 @@
-'''1. Your assignment is to scrape information from urls(Use Python/Beautiful soup) as a list of json elements. 
-Each json element should contain attributes extracted from a url web page like
-scraped_url,header_title,youtube_url,image_url,viewt,favourit_coune_count,comment_count and steps
- titles (as list) and supplies (as list if data is available on page).
-URLS
-1. https://www.instructables.com/Building-a-Self-Driving-Boat-ArduPilot-Rover/
-2. https://www.instructables.com/Hydraulic-Craft-Stick-Box/
-3. https://www.instructables.com/How-to-Make-a-Self-Watering-Plant-Stand/
-Assignment Guidelines:
-● Share assignment solution and instructions to run as a github repo link.
-● The deadline for submission will be 24 hours.'''
-
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -19,7 +7,7 @@ from time import sleep
 
 def get_page_source(link):
     
-    driver_path = r"D:\Python\my_codes\chromedriver.exe"
+    driver_path = r"PTH TO CHROME DRIVER"
     driver = webdriver.Chrome(driver_path)
     driver.get(link)
     sleep(5)
